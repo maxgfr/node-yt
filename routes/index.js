@@ -24,7 +24,7 @@ fs.readFile('client_secret.json', function processClientSecrets(err, content) {
   authorize(JSON.parse(content), {'params': {'channelId': 'UC_x5XG1OV2P6uZZ5FSM9Ttw',
                  'maxResults': '25',
                  'part': 'snippet,contentDetails'}}, playlistsListByChannelId);
-   autho(JSON.parse(content), getChannel);
+  authorize(JSON.parse(content), null, getChannel);
 });
 
 
