@@ -42,7 +42,7 @@ exports.authorize = function(credentials) {
     });
 };
 
-exports.confirmToken = function(client_response, oauth2Client) {
+exports.confirmToken = function(client_response, credentials) {
     var clientSecret = credentials.installed.client_secret;
     var clientId = credentials.installed.client_id;
     var redirectUrl = credentials.installed.redirect_uris[0];
@@ -57,14 +57,19 @@ exports.confirmToken = function(client_response, oauth2Client) {
     });
 };
 
-exports.getChannel = function(auth,username) {
+exports.getChannel = function(credentials,username,token) {
     return new Promise(function (resolve, reject) {
-          var service = google.youtube('v3');
-          service.channels.list({
-            auth: auth,
+        var clientSecret = credentials.installed.client_secret;
+        var clientId = credentials.installed.client_id;
+        var redirectUrl = credentials.installed.redirect_uris[0];
+        var oauth2Client = new OAuth2(clientId, clientSecret, redirectUrl);
+        oauth2Client.credentials = JSON.parse(token);
+        var service = google.youtube('v3');
+        service.channels.list({
+            auth: oauth2Client,
             part: 'snippet,contentDetails,statistics',
             forUsername: username
-          }, function(err, response) {
+        }, function(err, response) {
             if (err) {
                 //console.log('The API returned an error: ' + err);
                 reject(err);
@@ -79,9 +84,9 @@ exports.getChannel = function(auth,username) {
                           channels[0].id,
                           channels[0].snippet.title,
                           channels[0].statistics.viewCount);*/
-                resolve(channels);
+              resolve(channels);
             }
-          });
+        });
     });
 };
 

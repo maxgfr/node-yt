@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>URL ACCESS</title>
+    <title>Connection</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
     <h1>Click on the link below: </h1>
-    <a href="<%= link_to_click %>"> <%= link_to_click %></a>
+    <a href="<%= link_to_click %>" target='_blank'> <%= link_to_click %></a>
+    <form action="/confirm_token" method="post">
+        <label for="token">Enter your token here: </label>
+        <input id="token" type="text" name="token">
+        <input type="submit" value="OK">
+    </form>
   </body>
 </html>
