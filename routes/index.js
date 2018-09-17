@@ -43,9 +43,9 @@ router.get('/get_channel', function(req, res, next) {
                 .then(function (token) {
                   console.log('TOKEN : ',token);
                   ytapi.getChannel(credentials, req.query.id_channel,token)
-                    .then(function (res) {
-                      console.log(res);
-                      res.render('res', { res: res});
+                    .then(function (result) {
+                      console.log(result);
+                      res.render('resultats', { rep: result});
                   })
                     .catch(function (err) {
                       console.log(err);
