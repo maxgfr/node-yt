@@ -7,8 +7,22 @@
   <body>
     <h1>You are connected</h1>
     <form action="/get_channel" method="get">
-        <label for="id_channel">Enter your id channel here: </label>
+        <label for="id_chaine">Enter your name of your channel here: </label>
+        <input id="id_chaine" type="text" name="id_chaine">
+        <input type="submit" value="OK">
+    </form>
+    <br/>
+    <form action="/get_upload" method="get">
+        <label for="id_channel">Enter id of your channel here: </label>
         <input id="id_channel" type="text" name="id_channel">
+        <input type="submit" value="OK">
+    </form>
+    <br/>
+    <form action="/get_video_playlist" method="get">
+        <label for="id_ch">Enter id of your channel here: </label>
+        <input id="id_ch" type="text" name="id_ch">
+        <label for="id_playlist">Enter id of the playlist here: </label>
+        <input id="id_playlist" type="text" name="id_playlist">
         <input type="submit" value="OK">
     </form>
   </body>
