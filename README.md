@@ -8,7 +8,7 @@ To try it you have to rename client_secret_example.json to client_secret.json (a
 
 ![alt text](https://github.com/maxgfr/node-yt/blob/master/github/one.png)
 
-<div style="width:50%">![alt text](https://github.com/maxgfr/node-yt/blob/master/github/two.png)</div>
+![alt text](https://github.com/maxgfr/node-yt/blob/master/github/two.png)
 
 ### The most beautiful UI in the world :
 
