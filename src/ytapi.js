@@ -111,8 +111,7 @@ exports.playlistsListByChannelId = function(credentials,requestData,token) {
     });
 };
 
-
-exports.uploadByChannelId = function(credentials,requestData,token) {
+exports.infoByChannelId = function(credentials,requestData,token) {
     return new Promise(function (resolve, reject) {
         var clientSecret = credentials.installed.client_secret;
         var clientId = credentials.installed.client_id;
@@ -123,6 +122,27 @@ exports.uploadByChannelId = function(credentials,requestData,token) {
         var parameters = removeEmptyParameters(requestData['params']);
         parameters['auth'] = oauth2Client;
         service.channels.list(parameters, function(err, response) {
+          if (err) {
+            //console.log('The API returned an error: ' + err);
+            reject(err);
+          }
+          //console.log(response.data);
+          resolve(response.data);
+        });
+    });
+};
+
+exports.videoByChannelId = function(credentials,requestData,token) {
+    return new Promise(function (resolve, reject) {
+        var clientSecret = credentials.installed.client_secret;
+        var clientId = credentials.installed.client_id;
+        var redirectUrl = credentials.installed.redirect_uris[0];
+        var oauth2Client = new OAuth2(clientId, clientSecret, redirectUrl);
+        oauth2Client.credentials = JSON.parse(token);
+        var service = google.youtube('v3');
+        var parameters = removeEmptyParameters(requestData['params']);
+        parameters['auth'] = oauth2Client;
+        service.playlistItems.list(parameters, function(err, response) {
           if (err) {
             //console.log('The API returned an error: ' + err);
             reject(err);

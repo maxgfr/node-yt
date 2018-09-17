@@ -60,7 +60,7 @@ router.get('/get_channel', function(req, res, next) {
         });
 });
 
-router.get('/get_upload', function(req, res, next) {
+router.get('/get_info', function(req, res, next) {
     console.log(req.query.id_channel);
     ytapi.readSecretJSON()
         .then(function (credentials) {
@@ -68,7 +68,7 @@ router.get('/get_upload', function(req, res, next) {
              ytapi.authorize(credentials)
                 .then(function (token) {
                   console.log('TOKEN : ',token);
-                  ytapi.uploadByChannelId(credentials, {'params': {'id': req.query.id_channel, 'maxResults': '25','part': 'snippet,contentDetails,statistics'}},token)
+                  ytapi.infoByChannelId(credentials, {'params': {'id': req.query.id_channel, 'maxResults': '25','part': 'snippet,contentDetails,statistics'}},token)
                     .then(function (result) {
                       console.log(result);
                       res.render('resultats', { rep: result});
@@ -88,14 +88,14 @@ router.get('/get_upload', function(req, res, next) {
 });
 
 router.get('/get_video_playlist', function(req, res, next) {
-    console.log(req.query.id_channel);
+    console.log(req.query.id_playlist);
     ytapi.readSecretJSON()
         .then(function (credentials) {
              //console.log(credentials);
              ytapi.authorize(credentials)
                 .then(function (token) {
                   console.log('TOKEN : ',token);
-                  ytapi.uploadByChannelId(credentials, {'params': {'id': req.query.id_channel, 'maxResults': '25','part': 'snippet,contentDetails,statistics'}},token)
+                  ytapi.videoByChannelId(credentials, {'params': {'playlistId': req.query.id_playlist, 'maxResults': '25','part': 'snippet,contentDetails,status'}},token)
                     .then(function (result) {
                       console.log(result);
                       res.render('resultats', { rep: result});
