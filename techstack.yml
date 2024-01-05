@@ -1,7 +1,8 @@
 repo_name: maxgfr/node-yt
 report_id: c3d723cdd66029ae8ed75a053a2772b1
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-10T09:19:49+00:00'
+timestamp: '2024-01-05T08:55:57+00:00'
 requested_by: maxgfr
 provider: github
 branch: master
@@ -15,6 +16,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/maxgfr/node-yt
   detection_source: Repo Metadata
 - name: JavaScript
   description: Lightweight, interpreted, object-oriented language with first-class
@@ -25,6 +27,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Languages
   image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/maxgfr/node-yt
   detection_source: Repo Metadata
 - name: ExpressJS
   description: Sinatra inspired web development framework for node.js -- insanely
@@ -37,7 +40,7 @@ tools:
   category: Languages & Frameworks
   sub_category: Microframeworks (Backend)
   image_url: https://img.stackshare.io/service/1163/hashtag.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
@@ -50,6 +53,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Server Configuration and Automation
   image_url: https://img.stackshare.io/service/8067/default_90dcb1286af7685c68df319c764b80704df1155b.png
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
@@ -61,6 +65,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/maxgfr/node-yt
   detection_source: Repo Metadata
 - name: npm
   description: The package manager for JavaScript.
@@ -70,6 +75,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Front End Package Manager
   image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
@@ -83,7 +89,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16136/default_def3edb85d7fbd20200a5cd7d0a1679e31bc8b3d.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
@@ -97,7 +103,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15852/default_a2f722724df977d0f7752839e5d8845ab41f69d5.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
@@ -111,7 +117,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16045/default_a9b6ac3c2fe43713f9a8e43d4668d0352ad0d247.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
@@ -132,7 +138,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/15818/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
@@ -154,7 +160,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16098/default_63a34654baee757196ddff2457bd1c9a0dfb7287.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
@@ -168,7 +174,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17925/default_72dbba22ca96f25f78f55f8ea5393222efca5494.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
@@ -182,7 +188,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16842/default_d7dbced92f420888f118516ac7144afed4acf9ca.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
@@ -203,7 +209,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16925/default_7b9968788548874538c601457e8dcd9c74bd2051.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
@@ -217,7 +223,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/16097/default_c7b204838197013798409fa2b4dafce450edc7fb.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
@@ -238,7 +244,7 @@ tools:
   category: Libraries
   sub_category: npm Packages
   image_url: https://img.stackshare.io/package/17372/default_c1932d441699b98abea6098c6f8f65e2acb4f5ed.png
-  detection_source_url: package-lock.json
+  detection_source_url: https://github.com/maxgfr/node-yt/blob/master/package-lock.json
   detection_source: package.json
   last_updated_by: Maxime Golfier
   last_updated_on: 2018-09-10 18:14:32.000000000 Z
